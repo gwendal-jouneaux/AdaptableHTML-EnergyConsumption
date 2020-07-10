@@ -1,3 +1,4 @@
 proxy/*.csv
 proxy/*.html
 proxy/node_modules/*
+.ipynb_checkpoints/*
