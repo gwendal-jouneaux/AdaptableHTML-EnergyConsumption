@@ -422,7 +422,7 @@ for entry in data:
 dfRatios = pd.DataFrame(ratios)
 dfRatios.rename(columns={0:"Energy consumption ratio"}, inplace=True)
 ```
-
+```
 tripadvisor.har        :  0.9502624908658479
 cnet.har               :  0.9597697215234957
 microsoft.har          :  0.6446405456732518
@@ -468,6 +468,7 @@ yelp.har               :  0.7262748963057455
 investopedia.har       :  0.6461608867869689
 google.har             :  0.9286466573418599
 nba.har                :  0.3368848478680585
+```
 
 ```python
 dfRatios.describe()
