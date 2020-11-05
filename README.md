@@ -231,7 +231,7 @@ approach_average_consumption = gmean(approach_consumption.loc[:,"energy"])
 print("Geometric mean of energy consumption = " + str(approach_average_consumption))
 ```
 
-    Geometric mean of energy consumption = 68.61082178391608
+Geometric mean of energy consumption = 68.61082178391608
 
 
 ## Statistics
@@ -266,26 +266,8 @@ print("Control Group")
 dfControl.describe()
 ```
 
-    Control Group
+Control Group
 
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -328,7 +310,6 @@ dfControl.describe()
     </tr>
   </tbody>
 </table>
-</div>
 
 
 
@@ -338,26 +319,8 @@ print("Test Group")
 dfTest.describe()
 ```
 
-    Test Group
+Test Group
 
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -400,9 +363,6 @@ dfTest.describe()
     </tr>
   </tbody>
 </table>
-</div>
-
-
 
 
 ```python
@@ -441,13 +401,9 @@ print("Effect size (Cohen's d) : " + str(cohend(control, test)))
 stats.ttest_ind(a=control,b=test,equal_var=False)
 ```
 
-    Effect size (Cohen's d) : 1.0594549561745572
+Effect size (Cohen's d) : 1.0594549561745572
 
-
-
-
-
-    Ttest_indResult(statistic=5.025436109798207, pvalue=4.676455520870763e-06)
+Ttest_indResult(statistic=5.025436109798207, pvalue=4.676455520870763e-06)
 
 
 
@@ -466,76 +422,58 @@ for entry in data:
 dfRatios = pd.DataFrame(ratios)
 dfRatios.rename(columns={0:"Energy consumption ratio"}, inplace=True)
 ```
-
-    tripadvisor.har        :  0.9502624908658479
-    cnet.har               :  0.9597697215234957
-    microsoft.har          :  0.6446405456732518
-    globo.har              :  0.7889168964224141
-    fandom.har             :  0.9288959718128857
-    webmd.har              :  0.5630958547016764
-    britannica.har         :  0.9283621885808455
-    thesaurus.har          :  0.9438100843057541
-    ebay.har               :  0.7738106471914337
-    cricbuzz.har           :  0.7612020508684165
-    espncricinfo.har       :  0.7599236450974477
-    genius.har             :  0.8624504306315708
-    rottentomatoes.har     :  0.7332986386619709
-    nytimes.har            :  0.4780709146415566
-    ytmp3.har              :  0.7334933102845678
-    apple.har              :  0.35446465120392023
-    reddit.har             :  0.926285825260249
-    espn.har               :  0.9278444043100721
-    y2mate.har             : -0.08677476648909965
-    dictionary.har         :  0.9186287386460963
-    unsplash.har           :  0.5557426458460382
-    urbandictionary.har    :  0.4993728864623095
-    amazon.har             :  0.09654623123999273
-    yahoo.har              :  0.9066042633576699
-    spanishdict.har        :  0.9074974863499278
-    uptodown.har           :  0.9681865052409672
-    wikipedia.har          :  0.01755128785427207
-    blog.google.har        :  0.0029039333104078358
-    craiglist.har          :  0.7368966043797374
-    timeanddate.har        :  0.5534602591586522
-    collinsdictionary.har  :  0.6490419597068768
-    dailymail.har          :  0.9001955972857368
-    wikitionary.har        : -0.05126332876748063
-    businessinsider.har    :  0.9715948949540087
-    theguardian.har        :  0.5611738517747926
-    merriam-webster.har    :  0.8778475970769947
-    playstation.har        :  0.10924049432464122
-    steampowered.har       :  0.8416282956771437
-    samsung.har            :  0.29490097326807285
-    premierleague.har      :  0.7248139078801875
-    techradar.har          :  0.09801245305426809
-    yelp.har               :  0.7262748963057455
-    investopedia.har       :  0.6461608867869689
-    google.har             :  0.9286466573418599
-    nba.har                :  0.3368848478680585
-
-
+```
+tripadvisor.har        :  0.9502624908658479
+cnet.har               :  0.9597697215234957
+microsoft.har          :  0.6446405456732518
+globo.har              :  0.7889168964224141
+fandom.har             :  0.9288959718128857
+webmd.har              :  0.5630958547016764
+britannica.har         :  0.9283621885808455
+thesaurus.har          :  0.9438100843057541
+ebay.har               :  0.7738106471914337
+cricbuzz.har           :  0.7612020508684165
+espncricinfo.har       :  0.7599236450974477
+genius.har             :  0.8624504306315708
+rottentomatoes.har     :  0.7332986386619709
+nytimes.har            :  0.4780709146415566
+ytmp3.har              :  0.7334933102845678
+apple.har              :  0.35446465120392023
+reddit.har             :  0.926285825260249
+espn.har               :  0.9278444043100721
+y2mate.har             : -0.08677476648909965
+dictionary.har         :  0.9186287386460963
+unsplash.har           :  0.5557426458460382
+urbandictionary.har    :  0.4993728864623095
+amazon.har             :  0.09654623123999273
+yahoo.har              :  0.9066042633576699
+spanishdict.har        :  0.9074974863499278
+uptodown.har           :  0.9681865052409672
+wikipedia.har          :  0.01755128785427207
+blog.google.har        :  0.0029039333104078358
+craiglist.har          :  0.7368966043797374
+timeanddate.har        :  0.5534602591586522
+collinsdictionary.har  :  0.6490419597068768
+dailymail.har          :  0.9001955972857368
+wikitionary.har        : -0.05126332876748063
+businessinsider.har    :  0.9715948949540087
+theguardian.har        :  0.5611738517747926
+merriam-webster.har    :  0.8778475970769947
+playstation.har        :  0.10924049432464122
+steampowered.har       :  0.8416282956771437
+samsung.har            :  0.29490097326807285
+premierleague.har      :  0.7248139078801875
+techradar.har          :  0.09801245305426809
+yelp.har               :  0.7262748963057455
+investopedia.har       :  0.6461608867869689
+google.har             :  0.9286466573418599
+nba.har                :  0.3368848478680585
+```
 
 ```python
 dfRatios.describe()
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -578,9 +516,6 @@ dfRatios.describe()
     </tr>
   </tbody>
 </table>
-</div>
-
-
 
 
 ```python
@@ -604,8 +539,8 @@ print("Estimated mean : " + str(mean))
 print("Confidence interval : [" + str(lo) + ", " + str(hi) + "] delta = " + str(mean - lo))
 ```
 
-    Estimated mean : 0.6380081851540494
-    Confidence interval : [0.541887875644182, 0.7341284946639169] delta = 0.0961203095098675
+Estimated mean : 0.6380081851540494
+Confidence interval : [0.541887875644182, 0.7341284946639169] delta = 0.0961203095098675
 
 
 ## Conclusion
