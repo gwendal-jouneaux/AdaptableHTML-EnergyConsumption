@@ -418,7 +418,7 @@ plt.show()
 ```
 
 
-![png](img/output_28_0.png)
+![png](https://user-images.githubusercontent.com/68585341/98282159-13a7f400-1f9e-11eb-9617-b59937960fd6.png)
 
 
 
@@ -432,7 +432,7 @@ sns.distplot(control, hist=False, rug=True, label="Normal web browsing");
 ```
 
 
-![png](img/output_29_0.png)
+![png](https://user-images.githubusercontent.com/68585341/98282160-14408a80-1f9e-11eb-92f5-6ffdbbec6a34.png)
 
 
 
@@ -593,7 +593,7 @@ ax = sns.kdeplot(ratios)
 ```
 
 
-![png](img/output_35_0.png)
+![png](https://user-images.githubusercontent.com/68585341/98282164-14d92100-1f9e-11eb-9912-397834ac172d.png)
 
 
 
